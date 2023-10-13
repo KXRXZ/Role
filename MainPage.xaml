@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Role.MainPage">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0,1">
+                <GradientStop Color="#2D1F30" Offset="0" />
+                <GradientStop Color="Black" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" BackgroundColor="Transparent">
+            <Label FontSize="18"
+           HorizontalOptions="CenterAndExpand"
+           Text="Join as Mentor or Mentee"
+           TextColor="White"
+           Padding="80">
+            </Label>
+        </Grid>
+        <Grid Grid.Row="1">
+            <!-- StackLayout for Mentor and Mentee labels -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Start" Margin="25">
+                <Label FontSize="18" Text="Mentor" TextColor="White" VerticalOptions="Center" Padding="50" />
+                <Label FontSize="18" Text="Mentee" TextColor="White" VerticalOptions="Center" Padding="50" />
+            </StackLayout>
+
+
+            <!-- Add padding or margin to create separation -->
+            <StackLayout VerticalOptions="Start" Padding="0,60,0,0">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Image Source="teacher_with_transparent.png" HorizontalOptions="Center" HeightRequest="180" WidthRequest="180" />
+                    <Image Source="student_with_transparent.png" HorizontalOptions="Center" HeightRequest="180" WidthRequest="180" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </Grid>
+
+
+</ContentPage>
